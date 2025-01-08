@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    border: 1px solid black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5rem 2fr 2fr 1fr;
+    row-gap: 1px; 
+    column-gap: 1px; 
+    
+}
+nav{
+    background-color: brown;
+    grid-column: 1 / 4;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem;
+    /* border: 2px solid orangered;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    
+}
+.navlist{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.buttons{
+    
+    display: flex;
+    gap: 20px;
+    
+}
+button{
+    /* border: 1px solid black; */
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+nav .buttons .btn1{
+    background-color: red;
+}
+nav .buttons .btn1:hover{
+    background-color: rgb(216, 138, 138);
+}
+nav .buttons .btn2{
+    background-color: red;
+}
+nav .buttons .btn2:hover{
+    background-color: rgb(212, 164, 164);
+}
+
+nav svg{
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* sidebar css */
+
+.sidebar {
+    background-color: aqua;
+    /* border: 2px solid black; */
+    list-style-type: none;
+    /* display: grid; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    
+    
+}
+
+.footer{
+    grid-column: 1 / 4;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+    font-size: 18px;
+}
+
+.img1{
+    background-color: aquamarine;
+    display: flex;
+    /* border: 2px solid black; */
+    /* grid-template-columns: repeat(1, 1fr); */
+    /* grid-row: 2 / 3; */
+    grid-column: 2 / 4; 
+    
+}
+.image{
+    /* height: 100%; */
+    width: 50%;
+    border: 2px solid black;
+
+}
+.para{
+    width: 80%;
+    border: 2px solid black;
+}
+.img2{
+    display: flex;
+    background-color: aquamarine;
+   
+   
+    /* grid-template-columns: repeat(1, 1fr); */
+   
+    grid-column: 2 / 4;
+}
+
+.part{
+    background-color: pink;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
